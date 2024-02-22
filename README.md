@@ -23,13 +23,15 @@ For getting instructions of using Laravel Sail, visit [appropriate documentation
    $ cp .env.example .env
    ```
 
-3. **Install PHP dependencies**
+3. **Configure your DB connection and queue in the .env file**
+
+4. **Install PHP dependencies**
 
    ```sh
    $ composer install
    ```
 
-4. **Start Laravel Sail**
+5. **Start Laravel Sail**
    ```sh
    $ ./vendor/bin/sail up -d
    ```
@@ -47,18 +49,18 @@ For getting instructions of using Laravel Sail, visit [appropriate documentation
    sail up -d
    ```
 
-5. **Generate application key**
+6. **Generate application key**
 
    ```sh
    $ sail artisan key:generate
    ```
 
-6. **Run migrations and seed DB**
+7. **Run migrations and seed DB**
    ```sh
    $ sail artisan migrate:fresh
    ```
 
-7. **Run tests!**
+8. **Run tests!**
 ```sh
    $ sail artisan test
    ```
